@@ -29,10 +29,27 @@ class GamesController < ApplicationController
     @message = params["this_is_a_key"]
   end
 
-
-def url_number_guess
-  @message = params["enter_number"]
+  def url_number_guess
+   @message = params["enter_number"]
   end
+
+
+def form_show
+
+end
+
+def form_send
+  @message = params["form_message"]
+end
+
+def number_show
+
+end
+
+def number_send
+  @number = params["form_number"]
+end
+
 end
 
 
